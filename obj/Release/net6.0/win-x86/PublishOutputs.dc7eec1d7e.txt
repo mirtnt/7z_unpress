@@ -1,0 +1,2 @@
+C:\Users\q3639\Desktop\7z_Uncompress\bin\Release\net6.0\publish\win-x86\7z_Uncompress.pdb
+C:\Users\q3639\Desktop\7z_Uncompress\bin\Release\net6.0\publish\win-x86\7z_Uncompress.exe

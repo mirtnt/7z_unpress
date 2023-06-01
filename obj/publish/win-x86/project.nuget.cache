@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Qy57N4DjLVPwytggYl42eKkCBDN8lrJ0NJ1jxCC0+9J5s+qvE0Kqy+c9Nx6tasdK3zVV/3a6Z+bpUVSCf+bJVA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\q3639\\Desktop\\7z_Uncompress\\7z_Uncompress.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\q3639\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.14\\microsoft.netcore.app.runtime.win-x86.6.0.14.nupkg.sha512",
+    "C:\\Users\\q3639\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.14\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.14.nupkg.sha512",
+    "C:\\Users\\q3639\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.14\\microsoft.aspnetcore.app.runtime.win-x86.6.0.14.nupkg.sha512",
+    "C:\\Users\\q3639\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\6.0.14\\microsoft.netcore.app.crossgen2.win-x64.6.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
