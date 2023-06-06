@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\q3639\\Desktop\\7z_Uncompress\\7z_Uncompress.csproj",
+      "projectUniqueName": "C:\\Users\\q3639\\Desktop\\7z_Uncompress\\7z_unpress\\7z_Uncompress.csproj",
       "projectName": "7z_Uncompress",
-      "projectPath": "C:\\Users\\q3639\\Desktop\\7z_Uncompress\\7z_Uncompress.csproj",
+      "projectPath": "C:\\Users\\q3639\\Desktop\\7z_Uncompress\\7z_unpress\\7z_Uncompress.csproj",
       "packagesPath": "C:\\Users\\q3639\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\q3639\\Desktop\\7z_Uncompress\\obj\\",
+      "outputPath": "C:\\Users\\q3639\\Desktop\\7z_Uncompress\\7z_unpress\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "G:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

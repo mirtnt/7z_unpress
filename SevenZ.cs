@@ -43,10 +43,26 @@ namespace _7z_Uncompress
             process.Start();
             var path = System.Environment.CurrentDirectory;
 
-            if (!File.Exists($"{path}\\this.file_name") || Directory.Exists($"{path}\\this.file_name"))
+            if(Directory.Exists($"{path}\\{this.file_name}"))
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("文件不存在或是文件夹");
+                Console.WriteLine($"{this.file_name} 文件是文件夹形式");
+                Console.ForegroundColor = ConsoleColor.White;
+                //File.WriteAllTextAsync($"{path}\\this.file_name\\this.file_name.txt", this.ToString());
+                //using var fs = new FileStream($"{path}\\{this.file_name}\\{this.file_name}.txt", FileMode.OpenOrCreate);
+                using var fs = new FileStream($"{path}\\{this.file_name}\\{file_title[..(file_title.Length > 50 ? 50 : file_title.Length)]}.md", FileMode.OpenOrCreate);
+                using var msg = new StreamWriter(fs);
+                msg.WriteLine(this.ToString());
+
+                msg.Close();
+
+                return false;
+            }
+
+            if (!File.Exists($"{path}\\{this.file_name}"))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"{this.file_name} 文件不存在");
                 Console.ForegroundColor = ConsoleColor.White;
                 return false;
             }
@@ -72,7 +88,15 @@ namespace _7z_Uncompress
 
             //Console.WriteLine("以下是message输出");
             //Console.WriteLine(message);
-            if (message.Contains("Everything is Ok")) return true;
+            if (message.Contains("Everything is Ok"))
+            {
+                using var fs = new FileStream($"{path}\\{file_title[..(file_title.Length > 50 ? 50 : file_title.Length)]}\\{file_title[..(file_title.Length > 50 ? 50 : file_title.Length)]}.md", FileMode.OpenOrCreate);
+                using var msg = new StreamWriter(fs);
+                msg.WriteLine(this.ToString());
+                //msg.Close();
+                return true;
+            }
+                
 
             Console.WriteLine("Error ! \n");
             Console.ForegroundColor = ConsoleColor.Yellow;
